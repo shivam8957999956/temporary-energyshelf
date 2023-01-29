@@ -1,0 +1,55 @@
+.recentComponent {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.recentComponent:hover {
+  border-color: #ebebeb;
+  box-shadow: 0 0 10px #dadada;
+}
+.recentComponentTitle {
+  font-family: Outfit;
+  color: rgb(34, 34, 34);
+  font-size: 15px;
+  font-weight: bold;
+}
+.recentComponentDesc {
+  font-family: Outfit;
+  font-size: 13px;
+  color: rgb(70, 70, 70);
+  margin-top: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.recentComponentType {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  font-family: Outfit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.recentComponentBlog {
+  color: rgb(0, 0, 0);
+  background-color: rgb(216, 216, 216);
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 13px;
+  margin: 10px;
+  cursor: pointer;
+  font-family: Outfit;
+}
+
+.recentComponent-b {
+  display: flex;
+  flex-direction: row;
+}

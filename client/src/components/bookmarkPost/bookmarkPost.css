@@ -1,0 +1,45 @@
+.bp {
+  font-family: Outfit;
+  display: flex;
+
+  flex-direction: row;
+
+  margin: 5px;
+}
+
+.bp-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  flex: 1;
+  overflow: hidden;
+  object-fit: cover;
+}
+.bp-t {
+  flex: 5;
+}
+.bp-img-val {
+  width: 100%;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  object-fit: contain;
+}
+
+.bp-text {
+  font-family: Outfit;
+  color: rgb(40, 49, 77);
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.bp-name {
+  font-family: Outfit;
+  color: rgb(99, 84, 61);
+  font-size: 10px;
+  margin-left: 10px;
+}

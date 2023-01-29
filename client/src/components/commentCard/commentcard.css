@@ -1,0 +1,64 @@
+.cc {
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.cc-userInfo {
+  display: flex;
+  flex-direction: row;
+  color: rgb(107, 107, 107);
+  flex-wrap: wrap;
+  font-family: Outfit;
+}
+.cc-username {
+  font-size: 12px;
+  cursor: pointer;
+}
+.cc-date {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.cc-report {
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.cc-report:hover {
+  color: rgb(52, 62, 65);
+}
+.cc-reply-text {
+  font-size: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  background-color: rgb(232, 244, 255);
+}
+.cc-reply-user {
+  font-size: 10px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.cc-reply-desc {
+  font-size: 10px;
+  margin-right: 5px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.cc-desc {
+  font-size: 14px;
+  margin-top: 5px;
+  font-family: Outfit;
+}
+.cc-bottom {
+  display: flex;
+  font-size: 13px;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+}

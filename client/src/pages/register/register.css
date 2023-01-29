@@ -1,0 +1,85 @@
+.register {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+
+  background-size: cover;
+}
+.registerContainer {
+  display: flex;
+  flex-direction: row;
+}
+.r-left {
+  flex: 8;
+}
+.r-right {
+  margin: 90px;
+
+  flex: 5;
+}
+
+.registerTitle {
+  font-size: 40px;
+  font-family: Outfit;
+  color: rgb(0, 174, 255);
+}
+.leftImgg {
+  width: 900px;
+  height: 700px;
+  object-fit: cover;
+}
+
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm > label {
+  margin: 10px 0;
+  font-family: Outfit;
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: white;
+  border-style: none none solid none;
+  border-color: rgb(115, 115, 255);
+}
+
+.registerInput:focus {
+  outline: none;
+}
+
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(115, 115, 255);
+  color: white;
+  padding: 10px;
+  border: none;
+
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 10px;
+  text-align: center;
+}
+.registerButton:hover {
+  background-color: rgb(51, 51, 255);
+}
+
+.registerLoginButton {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: #353535;
+  border-radius: 10px;
+  margin: 10px 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.registerLoginButton:hover {
+  color: #000000;
+}

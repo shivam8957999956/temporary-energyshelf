@@ -1,0 +1,48 @@
+.sd {
+  display: flex;
+  flex-direction: column;
+}
+/* 
+.sd-image {
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.sd-title {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Outfit;
+  cursor: pointer;
+}
+.sd-main {
+  display: flex;
+
+  flex-direction: column;
+}
+.sd-desc {
+  font-size: 13px;
+  font-family: Outfit;
+  margin-top: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.sd-image {
+  margin-right: 5px;
+}
+.sd-follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sd-follow-text {
+  cursor: pointer;
+  border-radius: 50px;
+  border: solid rgb(58, 58, 58) 1px;
+  padding: 5px;
+  font-family: Outfit;
+  font-size: 14px;
+} */

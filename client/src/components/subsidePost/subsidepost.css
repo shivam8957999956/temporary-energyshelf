@@ -1,0 +1,49 @@
+.ex-bottom-right-card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  height: 100%;
+  /* margin: 10px 10px 10px 20px; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 1px;
+  align-content: flex-start;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.ex-bottom-right-card:hover {
+  transform: scale(1);
+  /* box-shadow: 0 2px 5px rgb(190, 190, 190); */
+}
+.ex-bottom-right-card-img {
+  width: 50px;
+  overflow: hidden;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.ex-bottom-right-card-left {
+  display: flex;
+
+  flex-direction: column;
+}
+.ex-bottom-right-card-title {
+  font-family: Outfit;
+  color: rgb(44, 52, 75);
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 1px;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.ex-bottom-right-card-time {
+  font-family: Outfit;
+  color: rgb(132, 145, 155);
+  margin-left: 10px;
+  font-size: 10px;
+  margin-top: 5px;
+}

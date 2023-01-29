@@ -1,0 +1,234 @@
+.singlePost {
+  margin: 5px 5px 5px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.singlePost-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-options {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+}
+.options {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 25px;
+  color: #636363;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+  /* background-color: #afb9ca; */
+}
+.options:hover {
+}
+.s11:hover {
+  color: #4182fa;
+  background-color: #e3ecff;
+}
+.s22:hover {
+  color: #fa4141;
+  background-color: #ffe1e1;
+}
+.s11:hover {
+  color: #4182fa;
+  background-color: #d3e2ff;
+}
+.s33:hover {
+  color: #fa7c41;
+  background-color: #ffe5d3;
+}
+.s44:hover {
+  color: #00ec14;
+  background-color: #d3ffd5;
+}
+.s55:hover {
+  color: #4153fa;
+  background-color: #d3e2ff;
+}
+.optionsEdit {
+  display: flex;
+  flex-direction: column;
+}
+.optionsText {
+  margin-left: 35px;
+  font-size: 1px;
+  color: #ff3c00;
+}
+.singlePostRecommend {
+  width: 320px;
+  overflow: hidden;
+  /* height: 100vh; */
+  /* position: fixed; */
+  /* right: 0%; */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+  overflow-y: scroll;
+}
+.singlePostRecommend::-webkit-scrollbar {
+  width: 1px;
+}
+.singlePostRecommend::-webkit-scrollbar-track {
+  background: #ffffff;
+  width: 1px;
+}
+
+/* Handle */
+.singlePostRecommend::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+}
+
+.singlePostRecommend-H {
+  font-family: Outfit;
+  font-size: 20px;
+  z-index: 999;
+}
+.singlePostWrapper {
+  padding: 20px 5px;
+  background-color: #ffffff;
+  margin-left: 120px;
+
+  width: 990px;
+  box-shadow: 0 10px 20px rgba(161, 161, 161, 0.19),
+    0 6px 6px rgba(173, 173, 173, 0.23);
+}
+.singlePostWrapper::-webkit-scrollbar {
+  width: 2px;
+  height: 1px;
+}
+.singlePostWrapper::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  width: 2px;
+}
+
+/* Handle */
+.singlePostWrapper::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+}
+
+.singlePostImg {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.singlePostCat {
+  background-color: #f0f0f0;
+  margin-left: 20px;
+  padding: 3px 6px;
+  font-size: 13px;
+  border-radius: 5px;
+  color: rgb(94, 94, 94);
+}
+.singlePostViews {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.singlePostViewsIcon {
+  font-size: 10px;
+  margin-right: 5px;
+}
+.singlePostTitle-e {
+  margin: 10px 10px 30px 10px;
+  font-family: Outfit;
+  font-size: 35px;
+  color: #1f2138;
+}
+.singlePostDate {
+  font-size: 12px;
+}
+.singlePostDateIcon {
+  margin-right: 5px;
+  font-size: 10px;
+  margin-left: 20px;
+}
+.singlePostEditorCoice {
+  font-size: 10px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: #ff3c00;
+  font-weight: bold;
+  padding: 1px 5px;
+  border: 1px solid #ff3c00;
+  border-radius: 50px;
+}
+.singlePostEditorCoiceIcon {
+  font-size: 8px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+}
+.singlePostIcon {
+  margin-left: 10px;
+  margin-top: 14px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.singlePostIconE {
+  transition: all 0.2s ease-in-out;
+  color: rgb(59, 207, 0);
+}
+.singlePostIconE:hover {
+  color: rgb(58, 173, 102);
+}
+.singlePostIconD {
+  color: rgb(255, 68, 68);
+}
+.singlePostIconD:hover {
+  color: rgb(255, 0, 0);
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  margin-left: 15px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: Outfit;
+  color: rgb(56, 44, 44);
+}
+.singlePostAuthor {
+  cursor: pointer;
+}
+.singlePostDesc {
+  font-family: Outfit;
+  line-height: 28px;
+  overflow-x: scroll;
+  padding: 10px;
+}
+.singlePostDesc::-webkit-scrollbar {
+  width: 2px;
+  height: 1px;
+}
+.singlePostDesc::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  width: 2px;
+}
+
+/* Handle */
+.singlePostDesc::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+}
+
+/* .singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+} */

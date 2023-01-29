@@ -1,0 +1,33 @@
+/* .footer {
+  position: absolute;
+  bottom: 0%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  font-family: Outfit;
+  left: 40%;
+  color: #1e1e35;
+} */
+.footer {
+  position: absolute;
+  left: 35%;
+  padding: 10px;
+  bottom: -50;
+
+  font-family: Outfit;
+  color: #1e1e35;
+  text-align: center;
+  /* background-color: white; */
+}
+.footerTerms {
+  cursor: pointer;
+}
+.footer-icon {
+  margin-left: 10px;
+  color: #24243d;
+}
+.footer-icon:hover {
+  color: #ff7c31;
+}

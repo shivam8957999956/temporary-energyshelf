@@ -1,0 +1,39 @@
+.ec {
+  width: 400px;
+  height: 140px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.ec:hover {
+  border: 1px solid rgb(219, 219, 219);
+}
+.ec-image {
+  object-fit: cover;
+  width: 200px;
+}
+.ec-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.ec-title {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  color: #181c30;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.ec-date {
+  cursor: pointer;
+  font-size: 14px;
+  color: #ff3c00;
+  margin-top: 10px;
+}

@@ -1,0 +1,171 @@
+.post {
+  width: 320px;
+
+  height: 400px;
+  margin: 5px 15px 40px 50px;
+  position: relative;
+  border-radius: 10px;
+}
+.post:hover {
+  border-color: #ebebeb;
+}
+.upper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+}
+.back {
+  display: flex;
+  flex-direction: column;
+}
+
+.watching {
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(31, 35, 53);
+  border-radius: 10px;
+  border-color: #ebebeb;
+  box-shadow: 0 0 10px #dadada;
+  font-family: Outfit;
+  font-size: 11px;
+  cursor: pointer;
+}
+.watchingIcon {
+  color: rgb(255, 145, 0);
+  margin-right: 5px;
+}
+.watchingVal {
+  color: #dadada;
+  font-size: 13px;
+}
+
+.likes {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: #ebebeb;
+  box-shadow: 0 0 10px #dadada;
+  font-family: Outfit;
+  font-size: 11px;
+}
+.likesIcon {
+  color: rgb(0, 119, 255);
+  margin-right: 5px;
+}
+
+.postImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 0px 9px rgb(177, 177, 206);
+  margin: 5px;
+
+  border-radius: 10px;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.postCat {
+  font-family: Outfit;
+  font-size: 14px;
+  color: #fd7f59;
+
+  margin-right: 10px;
+  cursor: pointer;
+  /* background-color: #ff5823; */
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.postCat:hover {
+  color: #ff6638;
+}
+.postCats {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+}
+.postCat:hover {
+}
+
+.postTitle {
+  font-family: Outfit, sans-serif;
+  font-size: 20px;
+  color: rgb(33, 34, 48);
+  cursor: pointer;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.postDesc {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: Outfit, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+
+  color: #444;
+  line-height: 24px;
+  text-transform: "capitalize";
+  overflow: hidden;
+  margin-top: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.postAuthorData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postAuthorImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin: 5px 5px 5px 5px;
+}
+.postnameDate {
+  flex: 8;
+  display: flex;
+  margin-left: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.postDate {
+  font-family: Outfit;
+  margin-left: 0px;
+  font-size: 11px;
+
+  color: rgb(105, 105, 105);
+}
+.postAuthorName {
+  font-family: Outfit;
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(105, 105, 105);
+}
+.dash {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: rgb(105, 105, 105);
+}
+.postBookmark {
+  align-self: center;
+}

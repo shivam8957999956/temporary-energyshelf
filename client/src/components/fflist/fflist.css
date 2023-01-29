@@ -1,0 +1,26 @@
+.f-search-content {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+.f-search-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.f-search-val {
+  font-family: Outfit;
+  margin-left: 5px;
+  font-size: 13px;
+}
+.f-design {
+  background-color: rgb(241, 241, 241);
+  color: rgb(117, 117, 117);
+  font-size: 9px;
+  padding: 2px 4px;
+  margin-left: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,127 @@
+.es {
+  width: 280px;
+  background-color: white;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px 8px #dadada;
+}
+.es-exclusive {
+  position: absolute;
+  background-color: #ff5823;
+  color: white;
+  top: 5%;
+  left: 5%;
+  font-size: 10px;
+  border-radius: 5px;
+  font-family: Outfit;
+  padding: 3px 5px;
+}
+.es:hover {
+  transform: scale(1.05);
+}
+.es-im {
+  width: 280px;
+  margin-right: 10px;
+  object-fit: cover;
+  height: 130px;
+  /* border-radius: 10px 10px 0px 0px; */
+  align-items: center;
+}
+.es-title {
+  font-size: 15px;
+  font-family: Outfit;
+  max-lines: 2;
+  margin: 0px 10px;
+  line-height: 130%;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.ex-right {
+  padding: 0px 10px 10px 10px;
+  justify-content: space-around;
+}
+.es-desc {
+  font-size: 12px;
+  font-family: Outfit;
+  margin: 5px 10px 0px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  display: -webkit-box;
+  line-height: 170%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.es-time {
+  margin-top: 5px;
+  font-size: 13px;
+  font-family: Outfit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.es-time-val {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.es-date-val {
+  font-size: 11px;
+}
+.es-time-icon {
+  color: rgb(255, 145, 0);
+}
+
+.es-link {
+  font-size: 14px;
+  font-family: Outfit;
+  cursor: pointer;
+}
+.userViewCout {
+  position: absolute;
+}
+.openlink {
+  color: rgb(16, 187, 0);
+  font-size: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.openlink:hover {
+  background-color: rgb(16, 187, 0);
+  border-radius: 50px;
+  padding: 4px;
+  color: white;
+}
+.es-openLink {
+  margin-left: 10px;
+  background-color: #24263b;
+  padding: 3px 5px;
+  border-radius: 10px;
+  color: #ffb46e;
+  cursor: pointer;
+}
+.es-openLink:hover {
+  color: white;
+}
+.es-delete-icon {
+  font-size: 15px;
+  color: red;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.expired {
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+}
+.expired:hover {
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+}

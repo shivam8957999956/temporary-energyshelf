@@ -1,0 +1,56 @@
+.singlePostRecommend {
+  transition: all 0.2s ease-in-out;
+  width: 340px;
+  background-color: white;
+  padding: 5px;
+}
+.topRecommendProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topRecommendProfile-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+.singlePostRecommend-H {
+  margin-top: 10px;
+}
+.topRecommendProfile-title {
+  font-family: Outfit;
+  color: rgb(28, 47, 65);
+  font-weight: bold;
+  font-size: 18px;
+}
+.topRecommendProfile-design {
+  font-family: Outfit;
+  color: rgb(0, 156, 104);
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border-bottom: 1.4px solid rgb(175, 175, 175);
+}
+.likesd {
+  color: rgb(107, 107, 107);
+}
+.design_title {
+  background-color: rgb(234, 248, 255);
+  font-size: 12px;
+  padding: 5px;
+  color: rgb(0, 166, 196);
+  border-radius: 5px;
+}
+.design_icon {
+  margin-right: 5px;
+  font-size: 12px;
+  margin-left: 10px;
+}

@@ -1,0 +1,25 @@
+.admin {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.adminCat {
+  width: 400px;
+}
+.admin-all-category {
+  padding: 10px;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  flex: 1;
+}
+.admin-val {
+  font-family: Outfit;
+  margin-left: 20px;
+  margin-top: 5px;
+  text-align: center;
+  color: brown;
+}

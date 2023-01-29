@@ -1,0 +1,77 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+
+  z-index: 999;
+  padding: 8px 0px;
+  border-bottom: 1px solid #d8fafa;
+}
+.topleft,
+.topright {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoImg {
+  width: 80px;
+  height: 55px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.logoDesc {
+  font-family: "Roboto Condensed";
+}
+.topImg-t {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  object-fit: cover;
+}
+.topcenter {
+  flex: 7;
+}
+.topList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.toprightNoti {
+  font-size: 15px;
+  color: #55607a;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.toprightNoti:hover {
+  color: #252a36;
+}
+.topListItem {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  border-bottom: 3px solid #ff5823;
+  color: #384259;
+  padding: 5px 10px;
+  font-family: Outfit;
+}
+
+.AboutUs {
+  color: crimson;
+  transition: all 0.2s ease-in;
+  border-radius: 10px;
+  border: none;
+}
+.AboutUs:hover {
+  background-color: rgb(255, 72, 109);
+  color: white;
+}

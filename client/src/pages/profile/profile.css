@@ -1,0 +1,253 @@
+.profileTop {
+  display: flex;
+  flex-direction: row;
+}
+.profileTop-l {
+  display: flex;
+  flex-direction: row;
+  flex: 5;
+}
+.profile {
+  padding: 50px 150px;
+}
+.profileImg {
+  width: 280px;
+  border-radius: 10px;
+  height: 240px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgb(226, 226, 226);
+}
+.profileTopLeft {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.profileName {
+  font-family: Outfit;
+  font-size: 30px;
+  color: #24273d;
+}
+.profileTagLine {
+  margin-top: 10px;
+  font-family: Outfit;
+  font-size: 15px;
+
+  border-radius: 5px;
+  color: rgb(0, 153, 255);
+}
+.profileEmail {
+  margin-top: 5px;
+  font-family: Outfit;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.profileStar {
+  color: rgb(252, 164, 64);
+  margin-top: 10px;
+}
+.profileRating {
+  font-family: Outfit;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.light {
+  color: rgb(255, 232, 205);
+}
+.profileRanking {
+  display: flex;
+  align-items: center;
+}
+.energy {
+  font-size: 13px;
+
+  margin-top: 2px;
+  margin-left: 5px;
+  color: rgb(255, 68, 106);
+}
+
+.profileContactsMsg {
+  display: flex;
+  flex-direction: row;
+  font-family: Outfit;
+  margin-top: 10px;
+}
+.profileSendMsg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  align-items: center;
+  color: rgb(61, 61, 61);
+  background-color: rgb(241, 241, 241);
+}
+.profileIconMSG {
+  margin-right: 5px;
+  font-size: 10px;
+  align-items: center;
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+}
+.editProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+  margin-left: 0px;
+  background-color: rgb(69, 163, 111);
+}
+.editProfile:hover {
+  background-color: rgb(6, 148, 101);
+}
+.profileMid {
+  display: flex;
+  flex-direction: row;
+}
+.profileMiddle {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+.profileMiddleLeft {
+  flex: 5;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+  max-height: 800px;
+  flex-wrap: wrap;
+}
+.profileMiddleLeftCard {
+  width: 400px;
+}
+
+.profileMiddleRight {
+  background-color: rgb(0, 0, 0);
+  flex: 5;
+}
+
+.profileTitleMid {
+  font-family: Outfit;
+  margin: 10px;
+  margin-top: 30px;
+  font-size: 30px;
+
+  color: #1d1e25;
+}
+.profileMiddle-l {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-left: 30px;
+  width: 300px;
+  border-radius: 10px;
+
+  height: 250px;
+  padding: 10px;
+  box-shadow: 0 10px 20px rgba(177, 177, 177, 0.19),
+    0 6px 6px rgba(161, 161, 161, 0.23);
+}
+.profileTitleMid-l {
+  font-size: 20px;
+  font-family: Outfit;
+}
+.profileMiddleLeft-l {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.profileMiddleLeft-l::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.profileMiddleLeft-l::-webkit-scrollbar-track {
+  background: #ffffff;
+  width: 2px;
+}
+.FollowProfile {
+  background-color: rgb(210, 244, 255);
+  color: rgb(0, 130, 173);
+  border-radius: 5px;
+}
+/* Handle */
+.profileMiddleLeft-l::-webkit-scrollbar-thumb {
+  background: rgb(106, 109, 156);
+}
+.profileMiddleLeft::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.profileMiddleLeft::-webkit-scrollbar-track {
+  background: #ffffff;
+  width: 2px;
+}
+
+/* Handle */
+.profileMiddleLeft::-webkit-scrollbar-thumb {
+  background: rgb(106, 109, 156);
+}
+.viewss {
+  margin-top: 3px;
+
+  font-size: 14px;
+}
+.viewssIcon {
+  font-size: 10px;
+  color: grey;
+  margin-right: 5px;
+  margin-top: 6px;
+  padding-bottom: 5px;
+}
+.flists {
+  margin-right: 10px;
+  width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(161, 161, 161, 0.19),
+    0 6px 6px rgba(173, 173, 173, 0.23);
+  display: flex;
+  flex-direction: column;
+}
+.f-list-input {
+  border: none;
+  border-bottom: 1px solid red;
+  padding: 5px;
+}
+.f-list-button {
+  background-color: #1d1e25;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+.flists-title {
+  font-size: 14px;
+  margin: 10px;
+  font-family: Outfit;
+  color: #1b1d2c;
+}
+.flist {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 1px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+.flist::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+}
+.flist::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.flist::-webkit-scrollbar-track {
+  background: #ffffff;
+  width: 2px;
+}

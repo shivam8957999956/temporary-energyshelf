@@ -1,0 +1,113 @@
+.nse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+}
+.nse-l {
+  display: flex;
+  margin-right: 10px;
+  flex-direction: column;
+  background-color: #1f2135;
+  padding: 20px;
+  height: 60px;
+  border-radius: 300px;
+  text-align: center;
+  color: white;
+  font-family: Outfit;
+}
+.nse-l-date {
+  font-size: 30px;
+  font-family: Outfit;
+  color: rgb(255, 166, 65);
+}
+.nse-r {
+  width: 400px;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(31, 42, 53, 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px rgba(56, 40, 40, 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+.nse-r-img {
+  border-radius: 10px;
+  width: 150px;
+  object-fit: cover;
+}
+.nse-r-text {
+  margin-left: 5px;
+  font-family: Outfit;
+  display: flex;
+  flex-direction: column;
+  color: #1f2135;
+  justify-content: space-around;
+}
+.nse-r-title {
+  font-size: 18px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  font-weight: bold;
+}
+
+.nse-r-desc {
+  font-size: 13px;
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.nse-r-dateInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.nse-r-time {
+  margin-right: 10px;
+}
+.nse-r-now {
+  border: 1px solid #ff5823;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 12px;
+  color: #ff5823;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.nse-r-now:hover {
+  color: #ffffff;
+  color: #ffffff;
+  background-color: #ff5823;
+}
+.nse-r-now-expired {
+  border: 1px solid #1f212c;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 12px;
+  color: #27233f;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.nse-r-now-expired:hover {
+  color: #ffffff;
+  color: #ffffff;
+  background-color: #1f213a;
+}
+
+.nse-r-delete:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+.nse-r-delete-t {
+  color: #a3a3a3;
+}
