@@ -121,7 +121,7 @@ export default function Write() {
       console.log(res);
       setPublish("published");
     } catch (err) {
-      setPublish("Retry to Publish");
+      setPublish("Retry to Publish or reduce the content");
     }
   };
   const handleCompressedUpload = (e) => {

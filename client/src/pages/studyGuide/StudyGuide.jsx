@@ -36,6 +36,7 @@ export default function StudyGuide() {
         // const res = await axios.get("/posts/?user=MTP");
         const res = await axios.get("/posts/?admin=true");
         setPosts(res.data);
+        console.log(res.data);
         setLoading(false);
       } catch (err) {
         setLoading(true);

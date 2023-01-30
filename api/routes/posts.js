@@ -143,7 +143,7 @@ router.put("/bookmark/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
-    if (post.username === req.body.username || req.body.username === "MTP") {
+    if (post.username === req.body.username || req.body.admin === true) {
       try {
         await post.delete();
         res.status(200).json("Post has been deleted...");

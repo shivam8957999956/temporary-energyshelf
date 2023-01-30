@@ -22,6 +22,7 @@ export default function Profile() {
   const [totalLikes, setTotalLikes] = useState(0);
   const [posts, setPosts] = useState([]);
   const [likesSort, setlikesSort] = useState([]);
+  const [designation, setDesignation] = useState([]);
   const [allposts, setAllPosts] = useState([]);
   const [followerList, setFollowerList] = useState([]);
   const [totalFollowers, settotalFollowers] = useState(0);
@@ -49,7 +50,13 @@ export default function Profile() {
     };
     fetchPosts();
   }, [search]);
-
+  useEffect(() => {
+    if (profile?.admin === true && profile?.faculty === true)
+      setDesignation("Faculty & Admin");
+    else if (profile?.faculty === true) setDesignation("Faculty");
+    else if (profile?.admin === true) setDesignation("Admin");
+    else setDesignation("Student");
+  }, [profile]);
   useEffect(() => {
     const getPost = async () => {
       // window.location.reload();
@@ -125,7 +132,7 @@ export default function Profile() {
               <img className="profileImg" src={profile.profilePic} alt="" />
               <div className="profileTopLeft">
                 <span className="profileName">{profile.username}</span>
-                <span className="profileTagLine">{profile.designation}</span>
+                <span className="profileTagLine">{designation}</span>
                 <span className="profileEmail">{profile.email}</span>
                 <div className="profileRating">
                   <div className="profileRanking">
