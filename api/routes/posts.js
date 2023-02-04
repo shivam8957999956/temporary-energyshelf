@@ -224,8 +224,7 @@ router.get("/trend/", async (req, res) => {
   try {
     let posts;
 
-    posts = await Post.find().sort({ views: -1 });
-
+    posts = await Post.find().sort({ view: -1 });
     res.status(200).json(posts);
   } catch (err) {
     res.status(500).json(err);

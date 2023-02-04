@@ -37,14 +37,13 @@ export default function Topbar() {
       <div className="topleft">
         <img
           className="logoImg"
-          src="https://designfirebrand.com/wp-content/uploads/2016/12/logo-4.jpg"
+          src="https://www.linkpicture.com/q/logo_480.png"
           alt=""
         />
         {/* <img className="logoImg"src="" alt="" /> */}
         <p className="logoDesc" onClick={() => setCheck(1)}>
           <Link className="link" to="/">
             {" "}
-            Energy Shelf
           </Link>
         </p>
       </div>

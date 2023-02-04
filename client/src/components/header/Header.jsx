@@ -43,9 +43,9 @@ export default function Header() {
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Student</div>
-              <div className="i-title-item">Petroleum Engineer</div>
-              <div className="i-title-item">Engineer</div>
-              {/* <div className="i-title-item">999090</div> */}
+              <div className="i-title-item">Coder</div>
+              <div className="i-title-item">Software Engineer</div>
+              <div className="i-title-item">IT Professional</div>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Header() {
         {/* </Link> */}
         {/* </form> */}
         {/* </div> */}
-        <div className="left">
+        {/* <div className="left">
           <div className="notiTitle">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nulla.
           </div>
@@ -78,7 +78,7 @@ export default function Header() {
             alt=""
             className="notiImg"
           />
-        </div>
+        </div> */}
       </div>
       <div
         className="headerImg"

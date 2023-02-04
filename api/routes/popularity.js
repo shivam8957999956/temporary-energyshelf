@@ -23,16 +23,16 @@ router.get("/", async (req, res) => {
   try {
     let posts;
     if (username) {
-      posts = await Post.find({ username }).sort({ views: -1 }).limit(10);
+      posts = await Post.find({ username }).sort({ view: -1 }).limit(10);
     } else if (today) {
       posts = await Post.find({
         categories: {
           $in: [today],
         },
       })
-        .sort({ views: -1 })
+        .sort({ view: -1 })
         .limit(6);
-    } else posts = await Post.find().sort({ views: -1 }).limit(10);
+    } else posts = await Post.find().sort({ view: -1 }).limit(10);
 
     res.status(200).json(posts);
   } catch (err) {
@@ -48,14 +48,14 @@ router.get("/all", async (req, res) => {
   try {
     let posts;
     if (username) {
-      posts = await Post.find({ username }).sort({ views: -1 });
+      posts = await Post.find({ username }).sort({ view: -1 });
     } else if (today) {
       posts = await Post.find({
         categories: {
           $in: [today],
         },
-      }).sort({ views: -1 });
-    } else posts = await Post.find().sort({ views: -1 });
+      }).sort({ view: -1 });
+    } else posts = await Post.find().sort({ view: -1 });
 
     res.status(200).json(posts);
   } catch (err) {
@@ -126,7 +126,7 @@ router.put("/", async (req, res) => {
 //GET POST
 // router.get("/", async (req, res) => {
 //   try {
-//     const post = await Popularity.find().sort({ views: -1 });
+//     const post = await Popularity.find().sort({ view: -1 });
 //     res.status(200).json(post);
 //   } catch (err) {
 //     res.status(500).json(err);

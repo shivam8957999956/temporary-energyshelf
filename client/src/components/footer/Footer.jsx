@@ -3,7 +3,7 @@ import "./footer.css";
 export default function Footer() {
   return (
     <div className="footer">
-      Energy shelf | © 2021 EnergyShelf |
+      College Knowledge | © 2021 College Knowledge |
       <span className="footerTerms">
         {" "}
         Terms {"&"} Condition |<i class="footer-icon fab fa-twitter"></i>

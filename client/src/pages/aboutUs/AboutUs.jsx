@@ -66,11 +66,13 @@ export default function AboutUs() {
           Welcome
         </span>
         <span className="topLg" onClick={handleSubmit}>
-          Lorem ipsum dolor sit amet.
+          Empowering Minds, Transforming Futures
         </span>
 
-        <span className="topm">ENERGY SHELF</span>
-        <span className="topm">Ever Green Knowledge Of Technology.</span>
+        <span className="topm">College Knowledge</span>
+        <span className="topm">
+          A comprehensive platform for learning and growth.
+        </span>
 
         {/*<div className="leftTop">
           <span className="topLg" onClick={handleSubmit}>
@@ -97,11 +99,11 @@ export default function AboutUs() {
       </div>
       <div className="abt-sub1">
         <div className="abt-sub1-txt">
-          We are a team of IITians, who setup this website inorder to create
+          We are a team of GNITs, who setup this website inorder to create
           something which is rare to find in this era. We provide solutions to
-          your problems not only in Computer Science and Machine Learning Domain
-          but also in oil and gas industry thus, covering two major engineering
-          domains at a once at the same place
+          your problems not only in Computer Science and Mordern Tech Solutions
+          Domain but also with industrial interview experiences. Hence Every
+          thing at Same Place.
         </div>
       </div>
       <div className="abt-intro">
@@ -113,35 +115,36 @@ export default function AboutUs() {
           />
         </div>
         <div className="abt-intro-right">
-          <div className="abt-text-1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
-            necessitatibus?
+          <div className="abt-text-1">What is College Knowledge?</div>
+          <div className="abt-text-2">
+            An educational website is a platform that provides students and
+            professionals with access to study materials, interview experiences,
+            and information about tech events. It serves as a one-stop-shop for
+            individuals who are looking to improve their skills and knowledge in
+            a particular field. One of the main features of the website is the
+            availability of study materials, which includes resources such as
+            videos, articles, and tutorials. These materials are designed to
+            help users understand complex topics and develop the skills they
+            need to succeed in their careers.
           </div>
           <div className="abt-text-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            fugiat libero dolorem illo commodi deserunt consectetur neque nulla
-            officia, porro quae itaque vitae repellat obcaecati. Beatae nulla
-            voluptate eligendi, similique eos tenetur inventore hic laborum in
-            sequi non atque velit necessitatibus at accusantium quod ex. Aut
-            animi necessitatibus voluptas inventore.
-          </div>
-          <div className="abt-text-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            fugiat libero dolorem illo commodi deserunt consectetur neque nulla
-            officia, porro quae itaque vitae repellat obcaecati. Beatae nulla
-            voluptate eligendi, similique eos tenetur inventore hic laborum in
-            sequi non atque velit necessitatibus at accusantium quod ex. Aut
-            animi necessitatibus voluptas inventore.
+            Another important aspect of the website is the interview experiences
+            section, where users can share their experiences of applying for
+            jobs and undergoing interviews. This information can be useful for
+            other users who are preparing for similar interviews, as it provides
+            insights into the types of questions that may be asked and the best
+            ways to respond. Finally, the website also posts information about
+            upcoming tech events, such as conferences, workshops, and meetups.
           </div>
         </div>
       </div>
       <div className="abt-sub2">
         <div className="abt-sub2-txt1">
-          We are a team of IITians, who setup this website inorder to create
+          We are a team of GNITs, who setup this website inorder to create
           something
         </div>
         <div className="abt-sub2-txt2">
-          We are a team of IITians, who setup this website inorder to create
+          We are a team of GNITs, who setup this website inorder to create
         </div>
       </div>
       <div className="team-info">
@@ -150,24 +153,24 @@ export default function AboutUs() {
           <div class="image">
             <img
               class="image__img"
-              src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              src="https://img.freepik.com/premium-photo/portrait-smiling-beautiful-asian-businesswoman-enjoy-idea-sitting-with-laptop-computer-office_37714-1913.jpg"
               alt="Bricks"></img>
             <div class="image__overlay image__overlay--blur">
-              <div class="image__title">Bricks</div>
-              <p class="image__description">Here we have a brick wall.</p>
+              <div class="image__title">Kamaneeya Kadari</div>
+              <p class="image__description">Fullstack Developer</p>
             </div>
           </div>
           <div class="image">
             <img
               class="image__img"
-              src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              src="https://img.freepik.com/premium-photo/portrait-smiling-beautiful-asian-businesswoman-enjoy-idea-sitting-with-laptop-computer-office_37714-1913.jpg"
               alt="Bricks"></img>
             <div class="image__overlay image__overlay--blur">
-              <div class="image__title">sdf sdf sd</div>
-              <p class="image__description">Co-founder</p>
+              <div class="image__title">Person 2</div>
+              <p class="image__description">designer</p>
             </div>
           </div>
-          <div class="image">
+          {/* <div class="image">
             <img
               class="image__img"
               src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -188,7 +191,7 @@ export default function AboutUs() {
               <div class="image__title">lsdf sdf ds</div>
               <p class="image__description">Co-founder</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -202,7 +205,9 @@ export default function AboutUs() {
           <div className="ab-contacts-icons">
             <div className="ab-contacts-icon">
               <i class="contact-icon fas fa-map-marker-alt"></i>
-              <span className="contact-text">9 A f Alkapuri</span>
+              <span className="contact-text">
+                G. narayanamma institute of technology and science
+              </span>
             </div>
             <div className="ab-contacts-icon">
               <i class="contact-icon fas fa-phone-alt"></i>
@@ -210,7 +215,9 @@ export default function AboutUs() {
             </div>
             <div className="ab-contacts-icon">
               <i class="contact-icon fas fa-envelope"></i>
-              <span className="contact-text">business@energyshelf.co.in</span>
+              <span className="contact-text">
+                business@collegeknowledge.co.in
+              </span>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ export default function Loading() {
     <div className="btn-bg">
       <button className="btn">
         <span className="spinner"></span>
-        <span className="btn__text">Your Shelf Is loading...</span>
+        <span className="btn__text">Knowledge is loading...</span>
       </button>
     </div>
   );

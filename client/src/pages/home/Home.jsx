@@ -31,6 +31,7 @@ export default function Home() {
       setLoading(false);
       const res1 = await axios.get("/popularity/");
       setPopularAll(res1.data);
+      console.log(res1.data);
       const res2 = await axios.get("/popularity/likes");
       setLikeAll(res2.data);
     };
