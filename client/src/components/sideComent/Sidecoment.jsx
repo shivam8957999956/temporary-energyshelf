@@ -75,11 +75,11 @@ export default function Sidecoment() {
   const formRef = useRef();
   const [done, setDone] = useState(false);
   const handleReport = async (com) => {
-    if (com.totalReport.length >= 0) {
+    if (com.totalReport.length >= 1) {
       console.log(com.totalReport.length);
       emailjs
         .sendForm(
-          "service_72i4wmb",
+          "kamaneeya14",
           "template_lmkw3os",
           formRef.current,
           "user_sP5i0padsT1ONdbiGYy9j",
@@ -98,24 +98,8 @@ export default function Sidecoment() {
         reportUser: user._id,
       });
     }
-    // console.log(res);
-    //   setToSend({
-    //     post_id: path,
-    //     user_name: com.username,
-    //     message: com.desc,
-    //     post_link: "http://localhost:3000/post" + path,
-    //   });
-    //   setCheck([]);
-    //   fetchPosts();
-    // } else {
-    //   const res = await axios.put("/comment/" + com._id);
-    //   // console.log(res);
-    //   fetchPosts();
-    // }
   };
   const handleDelete = async (com) => {
-    // console.log(com);
-
     const res = await axios.delete("/comment/" + com._id);
     fetchPosts();
   };
@@ -184,7 +168,7 @@ export default function Sidecoment() {
                   />
                   <input
                     type="text"
-                    value={"https://energy-shelf.herokuapp.com/post/" + path}
+                    value={"http://localhost:3000/post/" + path}
                     placeholder="Email"
                     name="post_link"
                   />

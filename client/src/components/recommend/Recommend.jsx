@@ -8,6 +8,7 @@ export default function Recommend({ p, userId }) {
   const [recommmed, setRecommend] = useState([]);
   const [profile, setProfile] = useState([]);
   const [likes, setLikes] = useState(0);
+  const [designation, setDesignation] = useState([]);
   const [f, setf] = useState(0);
   //   console.log(p);
   const location = useLocation();
@@ -34,6 +35,13 @@ export default function Recommend({ p, userId }) {
     getPost();
     // }
   }, []);
+  useEffect(() => {
+    if (profile?.admin === true && profile?.faculty === true)
+      setDesignation("Faculty & Admin");
+    else if (profile?.faculty === true) setDesignation("Faculty");
+    else if (profile?.admin === true) setDesignation("Admin");
+    else setDesignation("Student");
+  }, [profile]);
   const fetchPosts = async () => {
     console.log(p);
     const res1 = await axios.get("/posts/?cat=" + "general");
@@ -54,7 +62,7 @@ export default function Recommend({ p, userId }) {
             <div className="topRecommendProfile-title">{profile.username}</div>
           </Link>
           <div className="topRecommendProfile-design">
-            <span className="design_title">{profile.designation}</span>
+            <span className="design_title">{designation}</span>
             <div className="likesd">
               <i class="design_icon far fa-heart"></i>
               {" " + likes}

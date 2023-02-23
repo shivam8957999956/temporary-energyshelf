@@ -139,6 +139,55 @@ router.put("/bookmark/:id", async (req, res) => {
   }
 });
 
+//update report
+router.put("/report/:id", async (req, res) => {
+  if (req.body.check === "false") {
+    try {
+      const post = await Post.findById(req.params.id);
+      if (post.username === req.body.username) {
+        try {
+          const updatedPost = await Post.findByIdAndUpdate(
+            req.params.id,
+            {
+              $addToSet: { report: req.body.report },
+            },
+            { new: true },
+          );
+          res.status(200).json(updatedPost);
+        } catch (err) {
+          res.status(500).json(err);
+        }
+      } else {
+        res.status(401).json("You can update only your post!");
+      }
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  } else {
+    try {
+      const post = await Post.findById(req.params.id);
+      if (post.username === req.body.username) {
+        try {
+          const updatedPost = await Post.findByIdAndUpdate(
+            req.params.id,
+            {
+              $pull: { report: req.body.report },
+            },
+            { new: true },
+          );
+          res.status(200).json(updatedPost);
+        } catch (err) {
+          res.status(500).json(err);
+        }
+      } else {
+        res.status(401).json("You can update only your post!");
+      }
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  }
+});
+
 //DELETE POST
 router.delete("/:id", async (req, res) => {
   try {

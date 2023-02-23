@@ -53,6 +53,9 @@ const PostSchema = new mongoose.Schema(
     liked: {
       type: [String],
     },
+    report: {
+      type: [String],
+    },
   },
   { timestamps: true },
 );

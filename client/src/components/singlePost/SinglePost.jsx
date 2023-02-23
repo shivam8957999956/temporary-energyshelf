@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./singlePost.css";
-
+import emailjs from "emailjs-com";
 import parse from "html-react-parser";
 import { Context } from "../../context/Context";
 import axios from "axios";
@@ -16,25 +16,37 @@ export default function SinglePost() {
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+
+  const [designation, setDesignation] = useState([]);
   const [id, setID] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
   const [loading, setLoading] = useState(true);
   const [recommmed, setRecommend] = useState("");
   const [book, setBook] = useState("false");
   const [like, setLike] = useState("false");
+  const [report, setReport] = useState("false");
   const [likes, setLikes] = useState(0);
+  const [reports, setReports] = useState(0);
+  const formRef = useRef();
+  const [toSend, setToSend] = useState({
+    user_name: "",
+    post_id: "",
+    message: "",
+    post_link: "http://localhost:3000/post" + path,
+  });
   const myRef = useRef();
   useEffect(() => {
     const getPost = async () => {
       try {
         const res = await axios.get("/posts/" + path);
         setPost(res.data);
+        console.log(res.data);
         setRecommend(res.data.username);
         setID(res.data.userId);
         setTitle(res.data.title);
         setDesc(res.data.desc);
         setLoading(false);
-
+        setToSend({ user_name: post.username });
         const checkBook = () => {
           if (user && res.data.bookmark) {
             if (res.data.bookmark.indexOf(user._id) > -1) {
@@ -47,6 +59,23 @@ export default function SinglePost() {
         };
 
         checkBook();
+        const checkReport = () => {
+          if (user && res.data.report) {
+            if (res.data.report.indexOf(user._id) > -1) {
+              setReport("true");
+              // console.log(res.data.report);
+              // console.log("truesdfs");
+            } else {
+              setReport("false");
+              // console.log("false sdfi ");
+            }
+          }
+          // console.log(report);
+
+          // console.log(book);
+        };
+
+        checkReport();
         const checkLike = () => {
           if (user && res.data.liked) {
             if (res.data.liked.indexOf(user._id) > -1) {
@@ -99,6 +128,56 @@ export default function SinglePost() {
         } else {
           setBook("false");
         }
+      }
+    } else {
+      window.location.replace(`/login`);
+    }
+  };
+
+  const handleReportSMS = async (com) => {
+    if (com.report.length >= 1) {
+      console.log(com);
+      emailjs
+        .sendForm(
+          "kamaneeya14",
+          "template_5asq7ai",
+          formRef.current,
+          "user_sP5i0padsT1ONdbiGYy9j",
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            // console.log("result.text");
+            // setDone(true);
+          },
+          (error) => {
+            console.log(error.text);
+          },
+        );
+    } else {
+      // const res = await axios.put("/comment/" + com._id, {
+      //   reportUser: user._id,
+      // });
+    }
+  };
+  const handleReport = async () => {
+    if (user) {
+      const res = await axios.put("/posts/report/" + post._id, {
+        username: post.username,
+        report: user._id,
+        check: report,
+      });
+      // console.log(res.data);
+      if (res.data.report) {
+        if (res.data.report.indexOf(user._id) > -1) {
+          setReport("true");
+          // console.log(res.data);
+        } else {
+          setReport("false");
+        }
+      }
+      if (res.data.report.length >= 1) {
+        handleReportSMS(res.data);
       }
     } else {
       window.location.replace(`/login`);
@@ -159,6 +238,34 @@ export default function SinglePost() {
     <>
       {loading === false ? (
         <div className="singlePost-main">
+          <form ref={formRef} style={{ display: "none" }}>
+            <input
+              type="text"
+              value={post.username}
+              placeholder="Name"
+              name="user_name"
+            />
+            <input type="text" placeholder="Subject" name="user_subject" />
+            <input
+              value={post._id}
+              type="text"
+              placeholder="Subject"
+              name="post_id"
+            />
+            <input
+              type="text"
+              value={"http://localhost:3000/post/" + path}
+              placeholder="Email"
+              name="post_link"
+            />
+            <textarea
+              value={post.title}
+              name="message"
+              id=""
+              rows="5"></textarea>
+            <button>Submit</button>
+            {/* {done && <div className="c-t">Thanks for messaging.</div>} */}
+          </form>
           <div className="singlePost">
             <div className="side-options">
               {(true === user?.admin || post.username === user?.username) && (
@@ -191,6 +298,15 @@ export default function SinglePost() {
                 <i
                   className="options s44 far fa-bookmark"
                   onClick={handleBook}></i>
+              )}
+              {report === "true" ? (
+                <i
+                  className="options s44 fa-solid fa-flag"
+                  onClick={handleReport}></i>
+              ) : (
+                <i
+                  className="options s44 fa-regular fa-flag"
+                  onClick={handleReport}></i>
               )}
               <i
                 class="options s55 far fa-comment"
